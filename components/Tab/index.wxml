@@ -1,0 +1,6 @@
+<!-- 这是自定义组件 Tab -->
+<view class="tab-container">
+  <scroll-view class="tab-scroll-view" scroll-x="true" bindscroll="scroll" style="width: 100%">
+    <view   class="tab-scroll-view-item" wx:for="{{tabData}}" data-params="{{item}}" wx:key="index" bindtap="onclickTab">{{item.name}} </view>
+  </scroll-view>
+</view>

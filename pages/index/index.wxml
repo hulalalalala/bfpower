@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top-nav">
+    <view class="top-navleft-select">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="iconfont icon_brand">
+          <span class="top-nav-picker">选择品牌：{{array[index]}}</span>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="top-search"></view>
+  <!-- tab -->
+  <view class="top-tab">
+    <component-tab tabData="{{tabData}}" bind:on-change="changeTab"></component-tab>
+  </view>
+  <!-- 商品展示 -->
+  <view class="show-comms">
+    <view class="show-comms-item">
+      <view class="show-comms-item-clum">
+        <image style="width: 100%;" src="https://www.dior.cn/beauty/version-5.1563986503612/resize-image/ep/460/498/90/0/%252FY0113009%252FY0113009_C011300999_E01_GHC.jpg" />
+        <p>花萃润护  花漾色泽  轻盈持色</p>
+        <div class="show-comms-item-clum-btn">
+          <div>
+            ￥395
+          </div>
+          <div>
+            15Colors
+          </div>
+        </div>
+      </view>
+      <view class="show-comms-item-clum">
+        <image style="width: 100%;" src="https://www.dior.cn/beauty/version-5.1563986503612/resize-image/ep/460/498/90/0/%252FY0104009%252FY0104009_C010400999_E01_GHC.jpg" />
+        <p>花萃润护 花漾色泽  一抹绽放柔雾花瓣唇</p>
+        <div class="show-comms-item-clum-btn">
+          <div>
+            ￥330
+          </div>
+          <div>
+            15Colors
+          </div>
+        </div>
+      </view>
+    </view>
+    <view class="show-comms-item">
+      <view class="show-comms-item-clum">
+        <image style="width: 100%;" src="https://www.dior.cn/beauty/version-5.1563986503612/resize-image/ep/460/498/90/0/horizon%252Fcovers%252FY0027830_F042783999_E01_GHC.jpg" />
+        <p>高订色泽 – 缎光或哑光妆效 – 舒悦持色</p>
+        <div class="show-comms-item-clum-btn">
+          <div>
+            ￥330
+          </div>
+          <div>
+            15Colors
+          </div>
+        </div>
+      </view>
+      <view class="show-comms-item-clum">
+        <image style="width: 100%;" src="https://www.dior.cn/beauty/version-5.1563986503612/resize-image/ep/460/498/90/0/horizon%252Fcovers%252FY0027830_F042783999_E01_GHC.jpg" />
+        <p>高订色泽 – 缎光或哑光妆效 – 舒悦持色</p>
+        <div class="show-comms-item-clum-btn">
+          <div>
+            ￥330
+          </div>
+          <div>
+            15Colors
+          </div>
+        </div>
+      </view>
+    </view>
+  </view>
+</view>
